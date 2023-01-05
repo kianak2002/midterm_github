@@ -1,0 +1,140 @@
+    body,
+    html {
+            height: 100%;
+            margin: 0 auto;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    /* make a background and image and color */
+    .background {
+        /* for the background picture and color */
+        background-image: url("octocat.png");
+        background-color: lightgrey;
+        height: 100%;
+        width: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     /*
+     design for the left box which contains the information about someone's github
+     it contains 5 boxes : image, address, name, blog, bio
+     */
+    .box_info {
+        background-color: lightgrey;
+        width: 40%;
+        height: 42%;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 50px;
+        margin-left: 5%;
+        position: absolute;
+        top: 20%;
+        opacity: 0.8;
+        
+        display: grid; 
+        grid-template-rows: 5fr 5fr;
+        grid-template-columns: 7fr 5fr ; 
+        grid-column-gap: 80px;
+        grid-row-gap: 100px;
+        overflow: hidden;
+    }
+
+     /* design for the right box which contains an input box and a submit button */
+    .box_request {
+        background-color: lightgrey;
+        width: 20%;
+        height: 42%;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 50px;
+        margin-left: 65%;
+        position: absolute;
+        top: 20%;
+        opacity: 0.8;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10%;
+        align-items: center;
+    }
+
+     /* the design for the input box*/
+    .username {
+        margin-top: 50%;
+        vertical-align:top;
+        display: inline-block;
+        background-color: lightgrey;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 10px ;
+        opacity: 0.8;
+        text-align: center; /* the text would be in the centre of the box */
+        /* overflow: auto;  the text would fit in the box */
+    
+    }
+
+     /* the design for the submit button box */
+    .submit_button {
+        padding: 10px ;
+        background-color: lightgrey;
+        border: 1px solid black;
+        border-radius: 2px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+     /* design for the bio box and image in the left information outer box */
+    .bio {
+        border: 1px ;
+        font-size: large;
+        color: black;
+        border-radius: 2px;
+        box-sizing: border-box;
+        max-width: 150%;
+        max-height: 150%;
+        justify-content: space-between;
+        overflow: hidden;
+        block-size: 5fr 5fr;
+        /* display: flex; */
+    }
+
+    /* 
+    the design for the boxes that are in the information box which are the
+    address, blog, and fullname
+    */ 
+    .info {
+        border: 1px;
+        color: black;
+        box-sizing: border-box;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        max-height: 50%;
+        text-align: center;
+        display: grid;
+    }
+
+    /*
+    design for text notifs
+    */
+    .text {
+        font-size: large;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+
+   
+
+   
+
